@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+  background-image: 
+    radial-gradient(circle at top right, rgba(13, 21, 109, 0.7) 0%, transparent 55%),
+    radial-gradient(circle at bottom left, rgba(23, 10, 96, 0.7) 0%, transparent 55%),
+    radial-gradient(circle, #0B0F1A 0%, #0B0F1A 100%);
+    
+  background-attachment: fixed;
+  color: #FFFFFF;
+}
+
+h1,h2,h3,h4 {
+    text-wrap: balance;
+    font-family: 'Outfit', sans-serif;
+}
+p {
+    text-wrap: pretty;
+}
+
+header{
+    width: 100%;
+    background-color: #0B0F1A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: #0b0f1a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-links, footer .links {
+    display: flex;
+    gap: 26px;
+}
+.nav-link, footer .link {     
+        font-family: 'Inter', sans-serif;
+        font-size: 1.1rem;
+        color: #a9b9d0; /* Gris suave para los links inactivos */
+        text-decoration: none;
+        transition: all 0.5s ease;
+    }
+
+.nav-link:hover, footer .link:hover {
+        color: #c7f6ff;
+        font-weight: 700;
+        border-bottom: 2px solid #bdf4ff;
+    }
+
+.logo {
+    height: 60px;
+    & img {
+        height: 100%;
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #0B0F1A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #0b0f1a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    & .link:hover{
+        transform: translateY(-3px) scale(1.03);
+    }
+    & img {
+        padding: 0.1rem;
+        width: 40px;
+        height: 40px;
+        transition: all 0.5s ease;
+    }
+    & p {
+        text-transform: uppercase;
+        
+    }
+}

@@ -1,0 +1,562 @@
+.hero {
+    background-image:
+        radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.253) 100%),
+        linear-gradient(rgba(7, 27, 60, 0.5), rgba(33, 5, 67, 0.5)),
+        url('../img/fondo.jpeg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 10px 30px -10px #00000085;
+}
+ 
+.hero h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+    color: #dfe2f2;
+}
+ 
+.hero p {
+    font-size: 1rem;
+    padding: 0 18rem;
+    color: #dfe2f29c;
+}
+ 
+ 
+/* =====================
+   INFORMACION SECTION
+   ===================== */
+ 
+.informacion {
+    padding: 8rem 14rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+ 
+.informacion h1 {
+    width: fit-content;
+    text-align: center;
+    color: #dfe2f2;
+    font-size: 3rem;
+    margin-bottom: 8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(90deg, rgb(222, 233, 255) 0%, rgb(209, 205, 255) 100%) 1;
+}
+ 
+ 
+/* =====================
+   GRID & CARDS
+   ===================== */
+ 
+.grid {
+    display: grid;
+    grid-template-columns: 1.55fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 25px;
+    width: 100%;
+}
+ 
+.card {
+    background-color: #13182695;
+    border-radius: 18px;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+ 
+ 
+/* --- Card Arte --- */
+ 
+.card-arte {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 2rem 2rem 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 240px;
+    background-image:
+        linear-gradient(160deg, #25254cab 0%, #000000c4 100%),
+        url(../img/dibujo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.card-arte h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 0.55rem;
+}
+ 
+.card-arte p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+    margin-bottom: 0.9rem;
+    margin: 0 auto;
+    max-width: 340px;
+}
+ 
+ 
+/* --- Card Música --- */
+ 
+.card-musica {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 1.5rem 1.5rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 240px;
+    position: relative;
+    background-image:
+        linear-gradient(160deg, #25254c8a 0%, #000000a6 100%),
+        url(../img/piano.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.card-musica h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+ 
+.card-musica p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+    margin-bottom: 0.9rem;
+}
+ 
+ 
+/* --- Card Teatro --- */
+ 
+.card-teatro {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    min-height: 240px;
+}
+ 
+.teatro-img {
+    background-image:
+        linear-gradient(160deg, #25254c8a 0%, #000000a6 100%),
+        url(../img/teatro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.teatro-content {
+    padding: 2rem 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+.teatro-content h2 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 0.8rem;
+}
+ 
+.teatro-content p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.7;
+    margin: 0 auto;
+    margin-bottom: 1.4rem;
+    max-width: 320px;
+}
+ 
+ 
+/* =====================
+   SHARED ELEMENTS
+   ===================== */
+ 
+.content {
+    position: relative;
+    z-index: 2;
+}
+ 
+.icon {
+    position: absolute;
+    top: 14px;
+    left: 18px;
+    z-index: 3;
+    width: 28px;
+    height: 28px;
+    background: rgba(61, 90, 254, 0.25);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+ 
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: gap 0.2s ease;
+}
+ 
+.skills-grid {
+    display: flex;
+    gap: 12px;
+}
+ 
+.skill-card {
+    background: #1d263e;
+    border-radius: 10px;
+    border: solid 2px #ffffff57;
+    padding: 0.8rem 1rem;
+}
+ 
+.skill-card h4 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.01em;
+}
+ 
+.skill-card p {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+ 
+ 
+/* =====================
+   MENSAJE SECTION
+   ===================== */
+ 
+.mensaje {
+    background-color: #151b2dae;
+    padding: 10rem 20rem;
+}
+ 
+.texto {
+    background-color: #0a0a0a39;
+    border-radius: 15px;
+    text-align: center;
+    padding: 3rem 5rem;
+}
+ 
+.texto .text {
+    color: #dfe2f2;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+ 
+.texto .n {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3f4962c6;
+    margin-bottom: 2rem;
+}
+ 
+.texto .manifiesto {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+ 
+ 
+/* =====================
+   TABLET — max 1200px
+   ===================== */
+ 
+@media (max-width: 1200px) {
+    .hero {
+        padding: 0 6rem;
+    }
+ 
+    .hero h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+ 
+    .hero p {
+        padding: 0 6rem;
+    }
+ 
+    .informacion {
+        padding: 6rem 6rem;
+    }
+ 
+    .informacion h1 {
+        font-size: 2.4rem;
+        margin-bottom: 5rem;
+    }
+ 
+    .mensaje {
+        padding: 8rem 10rem;
+    }
+ 
+    .texto {
+        padding: 3rem 3rem;
+    }
+}
+ 
+ 
+/* =====================
+   TABLET PEQUEÑA — max 900px
+   ===================== */
+ 
+@media (max-width: 900px) {
+    .hero {
+        padding: 0 3rem;
+        height: auto;
+        min-height: 70vh;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+ 
+    .hero h1 {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+ 
+    .hero p {
+        padding: 0 2rem;
+        font-size: 0.95rem;
+    }
+ 
+    .informacion {
+        padding: 5rem 3rem;
+    }
+ 
+    .informacion h1 {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+ 
+    /* Grid pasa a 1 columna */
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+ 
+    .card-arte {
+        grid-column: 1;
+        grid-row: auto;
+        height: 22rem;
+    }
+ 
+    .card-musica {
+        grid-column: 1;
+        grid-row: auto;
+        height: 22rem;
+    }
+ 
+    /* Teatro: apila imagen encima, texto abajo */
+    .card-teatro {
+        grid-column: 1;
+        grid-row: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px auto;
+        height: auto;          /* FIX: anula el height:25rem heredado de .card */
+    }
+ 
+    /* FIX: el icono de teatro queda sobre la imagen, no el texto */
+    .card-teatro .icon {
+        top: 14px;
+        left: 18px;
+    }
+ 
+    .teatro-content {
+        padding: 1.8rem 1.8rem 2rem;
+    }
+ 
+    .teatro-content h2 {
+        font-size: 1.5rem;
+    }
+    .skills-grid {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Centrado vertical */
+      gap: 12px;
+    }
+ 
+ 
+    .mensaje {
+        padding: 6rem 4rem;
+    }
+ 
+    .texto {
+        padding: 2.5rem 2rem;
+    }
+ 
+    .texto .text {
+        font-size: 1.5rem;
+    }
+ 
+    .texto .n {
+        font-size: 1.6rem;
+    }
+}
+ 
+ 
+/* =====================
+   MÓVIL — max 600px
+   ===================== */
+ 
+@media (max-width: 600px) {
+    .hero {
+        padding: 5rem 1.5rem;
+        min-height: 80vh;
+    }
+ 
+    .hero h1 {
+        font-size: 1.9rem;
+        line-height: 2.6rem;
+        margin-bottom: 1.2rem;
+    }
+ 
+    .hero p {
+        padding: 0;
+        font-size: 0.9rem;
+    }
+ 
+    .informacion {
+        padding: 4rem 1.5rem;
+    }
+ 
+    .informacion h1 {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+    }
+ 
+    /* FIX: .card tiene height:25rem fijo — hay que anularlo en móvil
+       para que las cards con mucho contenido no corten el texto */
+    .card {
+        height: auto;
+        min-height: 18rem;
+    }
+ 
+    /* Estas dos sí pueden tener altura fija porque solo muestran imagen */
+    .card-arte,
+    .card-musica {
+        height: 20rem;
+    }
+ 
+    /* Teatro siempre altura automática */
+    .card-teatro {
+        height: auto;
+        grid-template-rows: 180px auto;
+    }
+ 
+    .card-arte h2 {
+        font-size: 1.2rem;
+    }
+ 
+    .teatro-content h2 {
+        font-size: 1.3rem;
+    }
+ 
+    /* FIX: skills-grid en columna para que no se compriman */
+
+    /* FIX: skill-card ocupa todo el ancho disponible */
+    .skill-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+ 
+    .mensaje {
+        padding: 4rem 1.5rem;
+    }
+ 
+    .texto {
+        padding: 2rem 1.2rem;
+        border-radius: 12px;
+    }
+ 
+    .texto .text {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+ 
+    .texto .n {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+ 
+    .texto .manifiesto {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+}
+ 
+ 
+/* =====================
+   MÓVIL PEQUEÑO — max 400px
+   ===================== */
+ 
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+ 
+    .informacion h1 {
+        font-size: 1.4rem;
+    }
+ 
+    .card-arte h2,
+    .card-musica h2 {
+        font-size: 1.1rem;
+    }
+ 
+    .card-teatro {
+        grid-template-rows: 160px auto;
+    }
+ 
+    .teatro-content h2 {
+        font-size: 1.15rem;
+    }
+ 
+    /* FIX: texto del teatro no desborde en pantallas muy pequeñas */
+    .teatro-content p {
+        max-width: 100%;
+    }
+}

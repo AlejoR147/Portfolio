@@ -1,0 +1,140 @@
+.hero {
+  background-color: #151b2dae;
+  padding: 18rem;
+
+    box-shadow: 0 10px 30px -10px #00000064;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    flex-direction: column;
+    text-align: center;      
+    & h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+        margin-bottom: 2rem;
+        color: #dfe2f2;
+    }
+    p {
+        font-size: 1rem;
+        padding: 0 18rem;
+        color: #dfe2f29c;
+    }
+}
+
+.proyectos {
+    padding: 8rem 14rem;
+    width: 100%;
+    & h1 {
+      text-transform: uppercase;
+        width: fit-content;
+        margin: 0 auto;  
+        color: #dfe2f2;
+        font-size: 3rem;
+        margin-bottom: 8rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 4px solid;
+        border-image: linear-gradient(90deg, rgb(222, 233, 255) 0%, rgb(209, 205, 255) 100%) 1;
+    }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.card {
+  background-color: #13182695;
+  border-radius: 12px;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  transition: all 0.25s ease;
+  & h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  & p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 25px;
+  }
+}
+.card:hover { 
+    transform: translateY(-3px); 
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1); 
+}
+.card-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1; 
+}
+
+/* --- TAMAÑOS EN EL GRID --- */
+.card-large {
+  grid-column: span 4; 
+}
+.card-small {
+  grid-column: span 2;
+}
+.card-horizontal {
+  grid-column: span 3; 
+  flex-direction: row; 
+}
+
+
+.card-horizontal .card-content {
+  width: 50%;
+}
+
+.card-img-top {
+  height: 220px;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  & img {
+    height: 100%;
+    width: auto; 
+    border-radius: 10px;
+  }
+}
+
+.card-img-side {
+  width: 50%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  & img {
+    height: auto;
+    width: 100%; 
+    border-radius: 10px;
+  }
+}
+
+.tags {
+  margin-bottom: 15px;
+}
+
+.tag {
+  background-color: #93b5ffa8;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+
